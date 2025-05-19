@@ -18,3 +18,12 @@ O **Backlog Não-Funcional** reúne os requisitos que não dizem respeito direta
 | O sistema deve ser documentado e compreensível por todos os membros das engenharias envolvidas | Manutenibilidade | Permite colaboração multidisciplinar e futuras melhorias |
 | Os dados de posição e altitude devem ser compatíveis com os sensores integrados ao hardware | Compatibilidade | Garante integração entre software e hardware de medição |
 | O código-fonte deve seguir boas práticas de programação e versionamento | Qualidade Técnica | Facilita auditoria, revisão por pares e evita plágios entre grupos |
+
+
+## Histórico de versões
+
+| Versão | Data | Descrição | Autor(es) | 
+| -- | -- | -- | -- |
+|`1.0`|17/05/2025| Criação do página e adição do backlog não funcional | [Rayene Almeida](https://github.com/rayenealmeida) |    |    |
+| Versão | Data | Descrição | Autor(es) | Revisor(es) | Comentário do Revisor |
+|`1.1`|19/05/2025| Adição do Histórico de Versões| [Rayene Almeida](https://github.com/rayenealmeida) |    |    |
