@@ -46,7 +46,7 @@ Os requisitos funcionas foram classificados utilizando o MoSCoW, técnica utiliz
       <td rowspan="3">E02<br>Análise de Voo</td>
       <td>F04<br>Visualização gráfica</td>
       <td>US04</td>
-      <td>Eu, como operador, quero visualizar gráficos de altitude, aceleração e velocidade para analisar a trajetória do foguete.</td>
+      <td>Eu, como operador, quero visualizar gráficos de aceleração e velocidade para analisar a trajetória do foguete.</td>
       <td>Must</td>
     </tr>
     <tr>
@@ -89,3 +89,11 @@ Os requisitos funcionas foram classificados utilizando o MoSCoW, técnica utiliz
     </tr>
   </tbody>
 </table>
+
+
+## Histórico de versões
+
+| Versão | Data | Descrição | Autor(es) | 
+| -- | -- | -- | -- |
+|`1.0`|17/05/2025| Criação do documento de backlog funcional | [Carlos Rodrigues](https://github.com/Carlos-kadu) |    |    |
+|`1.1`|01/06/2025| Adição do histórico de versões e ajuste na US04 | [Carlos Rodrigues](https://github.com/Carlos-kadu) |    |    |
