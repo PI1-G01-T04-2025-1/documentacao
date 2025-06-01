@@ -9,5 +9,5 @@ O BPMN (Business Process Model and Notation) é uma notação padrão internacio
 
 | Versão | Data | Descrição | Autor(es) | 
 | -- | -- | -- | -- |
-|`1.0`|17/05/2025| Modelagem do BPMN | [Carlos Rodrigues](https://github.com/Carlos-kadu) e [Rayene Almeida](https://github.com/rayenealmeida) |    |    |
-|`1.1`|01/06/2025| Criação do documento | [Carlos Rodrigues](https://github.com/Carlos-kadu) |    |    |
+|`1.0`|17/05/2025| Modelagem do BPMN | [Carlos Rodrigues](https://github.com/Carlos-kadu) e [Rayene Almeida](https://github.com/rayenealmeida) |
+|`1.1`|01/06/2025| Criação do documento | [Carlos Rodrigues](https://github.com/Carlos-kadu) |

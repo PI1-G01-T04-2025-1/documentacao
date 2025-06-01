@@ -24,6 +24,5 @@ O **Backlog Não-Funcional** reúne os requisitos que não dizem respeito direta
 
 | Versão | Data | Descrição | Autor(es) | 
 | -- | -- | -- | -- |
-|`1.0`|17/05/2025| Criação do página e adição do backlog não funcional | [Rayene Almeida](https://github.com/rayenealmeida) |    |    |
-| Versão | Data | Descrição | Autor(es) | Revisor(es) | Comentário do Revisor |
-|`1.1`|19/05/2025| Adição do Histórico de Versões| [Rayene Almeida](https://github.com/rayenealmeida) |    |    |
+|`1.0`|17/05/2025| Criação do página e adição do backlog não funcional | [Rayene Almeida](https://github.com/rayenealmeida) |
+|`1.1`|19/05/2025| Adição do Histórico de Versões| [Rayene Almeida](https://github.com/rayenealmeida) |
