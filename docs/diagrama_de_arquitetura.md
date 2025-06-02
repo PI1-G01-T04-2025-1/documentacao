@@ -18,4 +18,4 @@ Essa arquitetura proporciona uma solução robusta e escalável para monitoramen
 | Versão | Data | Descrição | Autor(es) | 
 | -- | -- | -- | -- |
 |`1.0`|26/05/2025| Modelagem do diagrama de Arquitetura | [Patrícia Silva](https://github.com/Patyhelenaa) e [David Wiliiam](https://github.com/sluucke) |
-|`1.1`|01/06/2025| Criação do documento | [Patrícia Silva](https://github.com/Patyhelenaa) |
+|`1.1`|02/06/2025| Criação do documento | [Patrícia Silva](https://github.com/Patyhelenaa) |
