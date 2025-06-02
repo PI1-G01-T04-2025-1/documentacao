@@ -52,7 +52,7 @@ Os requisitos funcionas foram classificados utilizando o MoSCoW, técnica utiliz
     <tr>
       <td>F05<br>Indicadores de desempenho</td>
       <td>US05</td>
-      <td>Eu, como operador, quero ver a altura máxima, tempo de voo e distância final para verificar se os requisitos de alcance foram atendidos.</td>
+      <td>Eu, como operador, quero ver o tempo de voo e distância final para verificar se os requisitos de alcance foram atendidos.</td>
       <td>Should</td>
     </tr>
     <tr>
@@ -96,4 +96,4 @@ Os requisitos funcionas foram classificados utilizando o MoSCoW, técnica utiliz
 | Versão | Data | Descrição | Autor(es) | 
 | -- | -- | -- | -- |
 |`1.0`|17/05/2025| Criação do documento de backlog funcional | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
-|`1.1`|01/06/2025| Adição do histórico de versões e ajuste na US04 | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
+|`1.1`|01/06/2025| Adição do histórico de versões e ajuste na US04 e US05 | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
