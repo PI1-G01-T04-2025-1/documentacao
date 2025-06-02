@@ -99,7 +99,6 @@ E04 Calibração de Trajetória
 \end{longtable}
 
 
-\usepackage{longtable}
 
 \renewcommand{\arraystretch}{1.2} % Espaçamento entre linhas
 
@@ -149,7 +148,7 @@ O código-fonte deve seguir boas práticas de programação e versionamento & Qu
 \end{longtable}
 
 
-    \item \textcolor{red}{ \textbf{Diagrama de casos de uso,} contendo os atores do sistema, os requisitos com os quais eles interagem e os tipos de relacionamentos entre requisitos realizados por um mesmo ator (ex.: \textit{include}, \textit{extend}). Obs.: este é um diagrama sobre requisitos funcionais.}
+\textcolor{red}{ \textbf{Diagrama de casos de uso,} contendo os atores do sistema, os requisitos com os quais eles interagem e os tipos de relacionamentos entre requisitos realizados por um mesmo ator (ex.: \textit{include}, \textit{extend}). Obs.: este é um diagrama sobre requisitos funcionais.}
     
     
   \subsection{Diagrama Arquitetura}
@@ -225,6 +224,87 @@ O DLD (Diagrama Lógico de Dados) é uma etapa fundamental no projeto de bancos 
 \end{figure}
 
 
+\renewcommand{\arraystretch}{1.2}
+
+Dicionário de Dados - Projeto Oásis
+
+\subsubsection*{Entidade: FOGUETE}  
+\textit{Descrição}: Contém informações dos foguetes utilizados nos lançamentos.  
+
+\begin{longtable}{|p{2.5cm}|p{3.5cm}|p{2cm}|p{1.8cm}|p{4cm}|}
+\hline
+\textbf{Atributo} & \textbf{Propriedades do Atributo} & \textbf{Tipo de Dado} & \textbf{Tamanho} & \textbf{Descrição} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Atributo} & \textbf{Propriedades do Atributo} & \textbf{Tipo de Dado} & \textbf{Tamanho} & \textbf{Descrição} \\
+\hline
+\endhead
+
+id & Chave primária, obrigatório & UUID & - & Identificador do foguete \\
+\hline
+nome & Obrigatório & VARCHAR & - & Nome do foguete \\
+\hline
+peso\_ZFW & Obrigatório & NUMERIC & 10,2 & Peso do foguete sem água (Zero Fuel Weight) \\
+\hline
+\end{longtable}
+
+\subsubsection*{Entidade: LANCAMENTO}  
+\textit{Descrição}: Contém os dados relacionados aos lançamentos de foguetes com água.  
+
+\begin{longtable}{|p{3.7cm}|p{2.7cm}|p{2cm}|p{1.8cm}|p{4cm}|}
+\hline
+\textbf{Atributo} & \textbf{Propriedades do Atributo} & \textbf{Tipo de Dado} & \textbf{Tamanho} & \textbf{Descrição} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Atributo} & \textbf{Propriedades do Atributo} & \textbf{Tipo de Dado} & \textbf{Tamanho} & \textbf{Descrição} \\
+\hline
+\endhead
+
+id & Chave primária, obrigatório & UUID & 11 & Identificador do lançamento \\
+\hline
+data\_hora & Obrigatório & DATE & - & Data e hora do lançamento \\
+\hline
+angulo\_inicial & Obrigatório & REAL & 2 & Ângulo inicial do lançamento \\
+\hline
+nivel\_agua & Obrigatório & NUMERIC & 300 & Nível de água no momento do lançamento \\
+\hline
+pressao\_inicial & Obrigatório & REAL & 4 & Pressão inicial no lançamento \\
+\hline
+massa\_foguete\_total & Obrigatório & NUMERIC & 10,2 & Massa total do foguete \\
+\hline
+FOGUETE\_id & Chave estrangeira, obrigatório & UUID & - & ID do foguete utilizado no lançamento \\
+\hline
+\end{longtable}
+
+\subsubsection*{Entidade: DADOCOLETADO}  
+\textit{Descrição}: Contém os dados registrados durante o lançamento de um foguete.  
+
+\begin{longtable}{|p{3.7cm}|p{2.7cm}|p{1.6cm}|p{1.8cm}|p{4cm}|}
+\hline
+\textbf{Atributo} & \textbf{Propriedades do Atributo} & \textbf{Tipo de Dado} & \textbf{Tamanho} & \textbf{Descrição} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Atributo} & \textbf{Propriedades do Atributo} & \textbf{Tipo de Dado} & \textbf{Tamanho} & \textbf{Descrição} \\
+\hline
+\endhead
+
+id & Chave primária, obrigatório & UUID & - & Identificador do dado coletado \\
+\hline
+LANCAMENTO\_id & Chave estrangeira, obrigatório & UUID & - & ID do lançamento ao qual os dados pertencem \\
+\hline
+posicoes & Obrigatório & REAL & - & Posição registrada durante o voo \\
+\hline
+velocidade & Obrigatório & REAL & - & Velocidade registrada durante o voo \\
+\hline
+tempo & Obrigatório & REAL & - & Tempo registrado correspondente aos dados \\
+\hline
+\end{longtable}
 
 
 \subsection{Diagrama de Estados}
@@ -240,7 +320,8 @@ O diagrama de estados é um tipo de diagrama utilizado para modelar o comportame
 \end{landscape}
 
 
-    \item \textcolor{red}{ \textbf{Protótipo funcional do \textit{software}, navegável.}}
+
+\textcolor{red}{ \textbf{Protótipo funcional do \textit{software}, navegável.}}
 
 \subsection{Especificações de Caso de Testes}
 
