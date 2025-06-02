@@ -99,29 +99,132 @@ E04 Calibração de Trajetória
 \end{longtable}
 
 
+\usepackage{longtable}
+
+\renewcommand{\arraystretch}{1.2} % Espaçamento entre linhas
+
+\subsection{Backlog Não-Funcional}
+
+O \textbf{Backlog Não-Funcional} reúne os requisitos que não dizem respeito diretamente às funcionalidades do sistema, mas que garantem sua qualidade, desempenho, segurança, usabilidade e outros atributos essenciais. Esses requisitos asseguram que o sistema funcione de maneira eficaz, seja confiável, seguro, escalável e mantenha a integridade dos dados e da experiência dos usuários.
+
+\subsubsection*{Requisitos}
+
+\begin{longtable}{|p{5cm}|p{3cm}|p{7cm}|}
+
+
+\hline
+\textbf{Requisito} & \textbf{Tipo} & \textbf{Justificativa} \\
+\hline
+\endfirsthead
+
+\hline
+\textbf{Requisito} & \textbf{Tipo} & \textbf{Justificativa} \\
+\hline
+\endhead
+
+O sistema deve registrar e armazenar dados de lançamento em até 2 segundos após a coleta & Desempenho & Garante tempo real para análise e resposta dos dados coletados \\
+\hline
+A base de dados deve persistir os dados de cada lançamento com 100\% de integridade & Confiabilidade & Evita perda de dados críticos para análise e calibração \\
+\hline
+A interface de análise de dados deve funcionar em desktops e notebooks das equipes & Usabilidade & Permite acesso ao sistema com os dispositivos disponíveis no ambiente escolar \\
+\hline
+O sistema deve proteger contra alterações manuais nos dados armazenados & Segurança & Garante veracidade dos dados para fins de avaliação \\
+\hline
+O software não deve depender de bibliotecas comerciais ou soluções prontas de terceiros & Legalidade & Atende às exigências do projeto pedagógico de autoria própria \\
+\hline
+O sistema deve suportar a entrada de até 3 lançamentos consecutivos por foguete & Escalabilidade & Compatível com a reutilização obrigatória dos foguetes \\
+\hline
+O tempo de carregamento das visualizações não deve ultrapassar 3 segundos com até 3 lançamentos & Desempenho & Mantém fluidez e rapidez na apresentação de dados \\
+\hline
+A plataforma de lançamento deve garantir uma zona segura mínima de 5 metros ao redor & Segurança & Protege a integridade física dos envolvidos no experimento \\
+\hline
+A coleta de dados deve ocorrer com precisão mínima de 0{,}1 unidade nas variáveis medidas & Precisão Técnica & Garante exatidão nas estimativas de trajetória e calibração do foguete \\
+\hline
+O sistema deve ser documentado e compreensível por todos os membros das engenharias envolvidas & Manutenibilidade & Permite colaboração multidisciplinar e futuras melhorias \\
+\hline
+Os dados de posição e altitude devem ser compatíveis com os sensores integrados ao hardware & Compatibilidade & Garante integração entre software e hardware de medição \\
+\hline
+O código-fonte deve seguir boas práticas de programação e versionamento & Qualidade Técnica & Facilita auditoria, revisão por pares e evita plágios entre grupos \\
+\hline
+\end{longtable}
+
+
+    \item \textcolor{red}{ \textbf{Diagrama de casos de uso,} contendo os atores do sistema, os requisitos com os quais eles interagem e os tipos de relacionamentos entre requisitos realizados por um mesmo ator (ex.: \textit{include}, \textit{extend}). Obs.: este é um diagrama sobre requisitos funcionais.}
+    
+    
+  \subsection{Diagrama Arquitetura}
+  O diagrama de arquitetura é uma representação visual essencial no desenvolvimento de software, funcionando como um guia para estruturar e compreender um sistema. Ele oferece uma visão holística de como os componentes internos interagem entre si e com entidades externas, facilitando a comunicação entre stakeholders, apoiando decisões de design e servindo como referência para implementação e manutenção futura. Ao expor as relações entre as partes do sistema, também ajuda a identificar gargalos potenciais ou desafios de integração.
+
+No diagrama em análise, observamos uma estrutura organizada em duas camadas fundamentais: o frontend (lado do cliente) e o backend (servidor). No frontend, a aplicação NexJs juntamente com TaliwindCSS para estilização oferece uma interface dinâmica e funcional, concentrando-se em operações CRUDs (criação, consulta, atualização e exclusão de dados) e um Dashboard para visualização e análise de informações.
+
+No backend, o ambiente NodeJS e o framework ExpressJS estabelecem as rotas REST que viabilizam a comunicação com o Supabase, responsável pelo armazenamento e gestão de dados. Essa camada processa a lógica de negócios para entidades específicas como Lançamento, Foguete e Sensor, gerenciando suas operações CRUDs e configurando a integração com o banco de dados.
+
+A comunicação entre as camadas ocorre exclusivamente via protocolo HTTP e APIs REST, garantindo interoperabilidade e controle de fluxo. O frontend solicita ações ao backend, que por sua vez consolida e persiste os dados no Supabase, retornando respostas para atualização da interface do usuário.
+
+Essa arquitetura proporciona uma solução robusta e escalável para monitoramento de foguetes e sensores, onde a separação clara de responsabilidades — interface (frontend), regras de negócio (backend) e armazenamento (Supabase) — otimiza a manutenção e permite adaptações futuras. O uso de tecnologias modernas como ExpressJS e Supabase ainda agiliza o desenvolvimento e assegura a confiabilidade das operações de dados.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=1\linewidth]{editaveis/figuras/diagrama_arquitetura.png}
+  \caption{Diagrama Arquitetura}
+  \label{fig:enter-label}
+\end{figure}
+
+
+
+\subsection{Diagrama Entidade Relacionamento}
+O DER (Diagrama Entidade-Relacionamento) é uma representação conceitual que mapeia as entidades (objetos do domínio), seus atributos e os relacionamentos, sem detalhes técnicos de implementação. No diagrama fornecido, gerado na ferramenta BrModelo, três entidades principais estruturam o modelo:
 
 \begin{itemize}
-    \item \textcolor{red}{\textbf{ \textit{Backlog} não-funcional do \textit{software}:}}
-    \begin{itemize}
-        \item \textcolor{red}{ Descrever os requisitos não-funcionais de forma objetiva;}
-        \item \textcolor{red}{ Mais facilmente, mais rapidamente, são descrições subjetivas não-válidas. Um exemplo de requisito não-funcional de desempenho: ``a página deve carregar em até 5s quando em conexão 4G''. }
-    \end{itemize}
-    \item \textcolor{red}{ \textbf{Diagrama de casos de uso,} contendo os atores do sistema, os requisitos com os quais eles interagem e os tipos de relacionamentos entre requisitos realizados por um mesmo ator (ex.: \textit{include}, \textit{extend}). Obs.: este é um diagrama sobre requisitos funcionais.}
-    \item \textcolor{red}{ \textbf{Descrição da arquitetura da solução de \textit{software} proposta:}}
-    \begin{itemize}
-        \item \textcolor{red}{ Propósito do \textit{software} (qual o seu papel no sistema);}
-        \item \textcolor{red}{ Estilo arquitetural contendo:}
-        \begin{itemize}
-            \item \textcolor{red}{ Padrão adotado: MVC, MVP, Microsserviços, Monolítico, etc (Justificar);}
-            \item \textcolor{red}{ Linguagens de programação: Java, Python, C\#, JavaScript, etc.}
-            \item \textcolor{red}{ \textit{Frameworks} e bibliotecas: Spring Boot, .NET Core, React, Angular, Django, etc.}
-            \item \textcolor{red}{ Banco de dados: Relacional (PostgreSQL, MySQL, etc) X NãoSQL (MongoDB,etc). }
-        \end{itemize}
-        \item \textcolor{red}{ Diagrama de alto nível: representação esquemática dos componentes da arquitetura, suas responsabilidades e comunicações, esclarecendo a composição do \textit{front-end} e do \textit{back-end}.}
-    \end{itemize}
-    \item \textcolor{red}{ \textbf{Persistência de dados:} diagrama de entidade relacionamento do banco de dados usado na solução proposta.}
-    \item \textcolor{red}{ \textbf{Análise de dados:} as variáveis definidas nos requisitos do projeto em abordagem numérica e gráfica.}
-    
+  \item \textbf{FOGUETE} (com atributos: \textit{id, nome, peso\_ZFW}) relaciona-se com \textbf{LANÇAMENTO} através do vínculo \textit{"realiza"}, onde:
+  \begin{itemize}
+    \item Um foguete pode ter múltiplos lançamentos (cardinalidade 1,n);
+    \item Cada lançamento pertence a um único foguete (cardinalidade 1,1).
+  \end{itemize}
+
+  \item \textbf{LANÇAMENTO} (com atributos: \textit{id, data\_hora, angulo\_inicial, nivel\_agua, pressao\_inicial, massa\_foguete\_total}) relaciona-se com \textbf{DADOCOLETADO} pelo vínculo \textit{"gera"}, onde:
+  \begin{itemize}
+    \item Cada lançamento produz múltiplos dados (cardinalidade 1,n);
+    \item Cada dado está vinculado a um único lançamento (cardinalidade 1,1).
+  \end{itemize}
+
+  \item \textbf{DADOCOLETADO} (com atributos: \textit{id, tempo, posicoes, velocidade}) armazena as medições técnicas.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{editaveis/figuras/diagrama_EntidadeRelacionamento.png}
+\caption{Diagrama Entidade Relacionamento}
+\label{fig:enter-label}
+\end{figure}
+
+\subsection{Diagrama Lógico de Dados}
+
+O DLD (Diagrama Lógico de Dados) é uma etapa fundamental no projeto de bancos de dados, responsável por transformar o modelo conceitual (DER) em uma estrutura técnica preparada para implementação física. Enquanto o DER foca em \textit{"o que"} o sistema precisa armazenar (entidades, atributos e relacionamentos), o DLD define \textit{"como"} esses elementos serão organizados no banco de dados, detalhando: No exemplo gerado com \textbf{BrModelo}, o DLD materializa o DER da seguinte forma:
+
+\begin{itemize}
+  \item A tabela \textbf{FOGUETE} contém os atributos: \textit{id} (UUID, chave primária), \textit{nome} (VARCHAR) e \textit{peso\_ZFW} (NUMERIC).
+  
+  \item A tabela \textbf{LANÇAMENTO} herda os atributos do DER e acrescenta o atributo \textit{foguete\_id} (UUID, chave estrangeira que referencia \textbf{FOGUETE}).
+
+  \item A tabela \textbf{DADOCOLETADO} contém os atributos \textit{id, tempo, posicoes, velocidade} e se vincula à tabela \textbf{LANÇAMENTO} por meio da chave estrangeira \textit{lancamento\_id}.
+\end{itemize}
+
+\textbf{Implementação dos Relacionamentos:}
+\begin{itemize}
+  \item A relação \textit{"um foguete realiza múltiplos lançamentos"} (1,n) é representada pela chave estrangeira \textit{foguete\_id} na tabela \textbf{LANÇAMENTO}.
+
+  \item A relação \textit{"um lançamento gera múltiplos dados"} (1,n) é representada pela chave estrangeira \textit{lancamento\_id} na tabela \textbf{DADOCOLETADO}.
+\end{itemize}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=1\linewidth]{editaveis/figuras/diagrama_LogicoDados.png}
+\caption{Diagrama Lógico de Dados}
+\label{fig:dld}
+\end{figure}
+
+
 
 
 \subsection{Diagrama de Estados}
@@ -138,20 +241,50 @@ O diagrama de estados é um tipo de diagrama utilizado para modelar o comportame
 
 
     \item \textcolor{red}{ \textbf{Protótipo funcional do \textit{software}, navegável.}}
-    \item \textcolor{red}{\textbf{ Roteiro de testes funcionais:} }
-    \begin{itemize}
-        \item \textcolor{red}{Código do caso de teste;}
-        \item \textcolor{red}{Nome do caso de teste;}
-        \item \textcolor{red}{Tipo do caso de teste (unitário, integrado ou sistema);}
-        \item \textcolor{red}{ Objetivo do caso de teste;}
-        \item \textcolor{red}{ Pré-condições do sistema para o teste ser realizado;}
-        \item \textcolor{red}{ Descrição dos procedimentos a serem executados para o teste;}
-        \item \textcolor{red}{ Resultado esperado para o teste ser aprovado (pós-condição após realizado o teste);}
-        \item \textcolor{red}{ Especificação do reparo a ser executado (caso o teste não seja aprovado);}
-        \item \textcolor{red}{ Resultado após reparo (o caso do teste ser necessário de ser repetido após reparo).}
-    \end{itemize}
-\end{itemize}
 
+\subsection{Especificações de Caso de Testes}
+
+Os testes de software são fundamentais para assegurar a qualidade e a confiabilidade dos sistemas, atuando como uma barreira crítica contra falhas. Essa prática consiste em executar o programa com o objetivo explícito de identificar erros e verificar se seu comportamento está alinhado aos requisitos especificados. Além de detectar defeitos existentes, os testes ajudam a prevenir problemas futuros, conferindo maior segurança quanto à estabilidade e funcionalidade do produto final.
+
+A especificação de testes formaliza esse processo ao estruturar os cenários de validação em um roteiro claro e sistemático. Ela define as condições de execução, os passos a serem seguidos, as entradas e os resultados esperados para cada caso, servindo como base para avaliar a conformidade com os requisitos do usuário. Para isso, utiliza-se uma tabela de casos de teste, que organiza cada cenário por meio de colunas como ID (identificador único do caso de teste, que permite rastreamento e referência rápida), Objetivo do Teste (descrição clara do que se pretende validar), Pré-condições (estado necessário do sistema antes da execução), Entradas (valores ou ações fornecidos ao sistema), Passos (sequência de ações a serem realizadas), Resultado Esperado (comportamento ou saída que o sistema deve apresentar) e Prioridade (grau de importância do teste, que auxilia na organização da execução). Essa estrutura organizada garante rastreabilidade, cobertura abrangente dos requisitos e validação minuciosa das funcionalidades — elementos essenciais para assegurar a qualidade e a confiabilidade do resultado final.
+
+\subsubsection*{Tabela de Especificação de Casos de Teste - Software}
+\begin{longtable}{|p{1cm}|p{2cm}|p{2cm}|p{2.2cm}|p{2cm}|p{2cm}|p{2.1cm}|}
+  \hline
+  \textbf{ID} & \textbf{Objetivo do Teste} & \textbf{Pré-condições} & \textbf{Entrada} & \textbf{Passos} & \textbf{Resultado Esperado} & \textbf{Prioridade} \\
+  \hline
+  \endfirsthead
+  
+  \hline
+  \textbf{ID} & \textbf{Objetivo do Teste} & \textbf{Pré-condições} & \textbf{Entrada} & \textbf{Passos} & \textbf{Resultado Esperado} & \textbf{Prioridade} \\
+  \hline
+  \endhead
+  
+  CT01 & Verificar inicialização da aplicação & Sistema instalado & Nenhuma & Iniciar o sistema & Tela inicial da aplicação é exibida & Alta \\
+  \hline
+  CT02 & Validar entrada de dados iniciais & Aplicação iniciada & Pressão, volume e ângulo & Inserir dados e confirmar entrada & Dados são aceitos e armazenados & Alta \\
+  \hline
+  CT03 & Verificar conexão com servidor embarcado & Dados iniciais inseridos & Nenhuma & Clicar em conectar e aguardar resposta & Sistema conecta ao servidor e exibe confirmação & Alta \\
+  \hline
+  CT04 & Testar reconexão após falha & Conexão inicial falhou & Opção de tentar novamente & Selecionar “tentar novamente” e aguardar reconexão & Reconexão realizada com sucesso ou tentativa encerrada & Média \\
+  \hline
+  CT05 & Validar coleta de dados & Conectado ao servidor & Nenhuma & Iniciar coleta e aguardar leitura de dados & Dados são recebidos com sucesso & Alta \\
+  \hline
+  CT06 & Testar falha na coleta & Conectado ao servidor & Comunicação interrompida ou erro & Iniciar coleta e simular erro & Sistema detecta falha e informa ao usuário & Alta \\
+  \hline
+  CT07 & Verificar salvamento de dados no banco & Dados coletados com sucesso & Nenhuma & Finalizar coleta e aguardar confirmação & Dados persistidos corretamente no banco & Alta \\
+  \hline
+  CT08 & Gerar gráficos com dados salvos & Dados salvos no banco & Nenhuma & Solicitar geração de gráficos & Gráficos são exibidos na tela & Alta \\
+  \hline
+  CT09 & Visualizar gráficos & Gráficos gerados & Nenhuma & Acessar seção de visualização & Gráficos são exibidos de forma clara & Alta \\
+  \hline
+  CT10 & Exportar dados & Dados disponíveis & Seleção de tipo de exportação & Escolher “exportar dados”, selecionar formato e confirmar & Processo de exportação iniciado & Média \\
+  \hline
+  CT11 & Exportar dados como PDF & Dados disponíveis & Selecionar exportação PDF & Iniciar exportação, selecionar “PDF” e confirmar & Arquivo PDF é gerado corretamente & Baixa \\
+  \hline
+  CT12 & Exportar dados como CSV & Dados disponíveis & Selecionar exportação CSV & Iniciar exportação, selecionar “CSV” e confirmar & Arquivo CSV é gerado corretamente & Baixa \\
+  \hline
+  \end{longtable}
 
 % \section{Estrutura}
 
