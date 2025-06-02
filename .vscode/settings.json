@@ -1,0 +1,51 @@
+{
+  "latex-workshop.latex.rootFile.useSubFile": false,
+  "latex-workshop.intellisense.citation.backend": "bibtex",
+  "latex-workshop.latex.recipe.default": "pdflatex -> bibtex -> pdflatex*2",
+  "latex-workshop.latex.outDir": "%DIR%/build/",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "pdflatex -> bibtex -> pdflatex*2",
+      "tools": ["pdflatex", "bibtex", "pdflatex", "pdflatex"]
+    },
+    {
+      "name": "latexmk",
+      "tools": ["latexmk"]
+    }
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "pdflatex",
+      "command": "pdflatex",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-output-directory=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "bibtex",
+      "command": "bibtex",
+      "args": [
+        "%DOCFILE%"
+      ],
+      "env": {}
+    },
+    {
+      "name": "latexmk",
+      "command": "latexmk",
+      "args": [
+        "-synctex=1",
+        "-interaction=nonstopmode",
+        "-file-line-error",
+        "-pdf",
+        "-output-directory=%OUTDIR%",
+        "%DOC%"
+      ],
+      "env": {}
+    }
+  ]
+}
