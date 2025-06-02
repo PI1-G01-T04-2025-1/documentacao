@@ -15,5 +15,5 @@ O **DER (Diagrama Entidade-Relacionamento)** é uma representação conceitual
 
 | Versão | Data | Descrição | Autor(es) | 
 | -- | -- | -- | -- |
-|`1.0`|26/05/2025| Modelagem do DER| [Patrícia Silva](https://github.com/Patyhelenaa),[David Wiliiam](https://github.com/sluucke) e [Ingrid Alves](https://github.com/alvesingrid) |
+|`1.0`|21/05/2025| Modelagem do DER| [Patrícia Silva](https://github.com/Patyhelenaa),[David Wiliiam](https://github.com/sluucke) e [Ingrid Alves](https://github.com/alvesingrid) |
 |`1.1`|02/06/2025| Criação do documento | [Patrícia Silva](https://github.com/Patyhelenaa) |
