@@ -10,7 +10,7 @@
 | 6 - Diagrama ER (Entidade-Relacionamento)               | 15/05           | 21/05            | 22/05        | 21/05         | —                        |
 | 7 - Análise de Dados (requisitos, desempenho, etc.)     | 20/05           | 21/05            | 26/05        | 21/05         | 6                        |
 | 8 - Diagrama de Estados (UML)                           | 19/05           | 25/05            | 25/05        | 25/05         | —                        |
-| 9 - Protótipo Funcional Navegável                       | 22/05           | —                | 27/05        | —             | 5, 6                     |
+| 9 - Protótipo Funcional Navegável                       | 22/05           | 31/05                | 27/05        | 31/05             | 5, 6                     |
 | 10 - Roteiro de Testes Funcionais                       | 23/05           | 28/05            | 28/05        | 28/05         | 5, 6                     |
 
 
@@ -37,3 +37,4 @@
 | `1.0`  | 01/05/2025 | Criação do cronograma inicial                           | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
 | `1.1`  | 14/05/2025 | Adequação do cronograma para a ED2     | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
 | `1.2`  | 03/06/2025 | Atualização do cronograma para entrega final | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
+| `1.3`  | 03/06/2025 | Atualização do cronograma para entrega final | [David William](https://github.com/sluucke) |
