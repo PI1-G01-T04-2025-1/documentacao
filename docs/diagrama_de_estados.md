@@ -11,3 +11,4 @@ O diagrama de estados é um tipo de diagrama utilizado para modelar o comportame
 | -- | -- | -- | -- |
 |`1.0`|25/05/2025| Modelagem do diagrama de estados | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
 |`1.1`|01/06/2025| Criação do documento | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
+|`1.2`|05/07/2025| Adiciona em cada barra de estado, qual estado ela representa ISSUE #5 | [Carlos Rodrigues](https://github.com/Carlos-kadu) |
