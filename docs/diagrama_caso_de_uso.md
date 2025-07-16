@@ -1,5 +1,5 @@
 # Diagrama Caso de Uso
-Um Diagrama de Caso de Uso* é uma representação visual no âmbito da UML (*Unified Modeling Language*) que descreve as interações entre atores (usuários, sistemas externos) e as funcionalidades (casos de uso) de um sistema. Ele tem como objetivo:  
+Um Diagrama de Caso de Uso é uma representação visual no âmbito da UML (*Unified Modeling Language*) que descreve as interações entre atores (usuários, sistemas externos) e as funcionalidades (casos de uso) de um sistema. Ele tem como objetivo:  
 - Identificar **requisitos funcionais** do sistema.  
 - Mostrar **como os usuários interagem** com as funcionalidades.  
 - Delimitar o **escopo** do sistema de forma clara.  
