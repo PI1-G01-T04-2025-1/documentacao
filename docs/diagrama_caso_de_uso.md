@@ -8,7 +8,7 @@ Um Diagrama de Caso de Uso é uma representação visual no âmbito da UML (*Uni
 </p>
 
 <p align="center">
-  <img src="/docs/imgs/Diagrama_Caso_de_Uso.drawio.png" alt="Diagrama de Implementacao" width="600">
+  <img src="/docs/imgs/Diagrama_Caso_de_Uso.png" alt="Diagrama de Caso de Uso" width="600">
 </p>
 
 <p align="center">
