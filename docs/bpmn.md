@@ -3,6 +3,7 @@ O BPMN (Business Process Model and Notation) é uma notação padrão internacio
 
 
 ![bpmn](imgs/BPMN.jpg)
+
 > 🛈 Versão 02 da modelagem BPMN
 
 ## Histórico de versões
