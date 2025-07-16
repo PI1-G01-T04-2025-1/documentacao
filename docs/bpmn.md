@@ -2,7 +2,8 @@
 O BPMN (Business Process Model and Notation) é uma notação padrão internacional que oferece modelos e representações gráficas para visualizar de forma clara os fluxos de atividades e as etapas dos processos dentro de ambientes empresariais e projetos, desde o seu início até a conclusão. Seu principal foco é fornecer diagramas de fácil compreensão para todas as pessoas envolvidas, facilitando a comunicação entre analistas, desenvolvedores e gestores, garantindo que todos os membros do grupo estejam alinhados aos objetivos do projeto.
 
 
-![bpmn](imgs/BPMN.jpg)
+![bpmn](imgs/bpmn.jpg)
+
 > 🛈 Versão 02 da modelagem BPMN
 
 ## Histórico de versões
