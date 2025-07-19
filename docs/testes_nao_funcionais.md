@@ -17,24 +17,28 @@ Foram realizadas comprovações para validar atributos de qualidade do sistema, 
 **Evidências Visuais:**
 
 **macOS:**
-![Teste de Usabilidade - macOS Firefox](imgs/teste_usabilidade_mac.png)
 
- Interface funciona corretamente, sem quebras ou bugs visuais
+![Teste de Usabilidade - macOS Firefox](imgs/teste_usabilidade_mac.jpeg)
+
+Interface funciona corretamente, sem quebras ou bugs visuais
 
 **Windows:**
+
 ![Teste de Usabilidade - Windows](imgs/teste_usabilidade_windows.png)
 
- Interface funciona corretamente, sem quebras ou bugs visuais
+Interface funciona corretamente, sem quebras ou bugs visuais
 
 **Ubuntu:**
+
 ![Teste de Usabilidade - Ubuntu](imgs/teste_usabilidade_ubuntu.png)
 
- Interface funciona corretamente, sem quebras ou bugs visuais
+Interface funciona corretamente, sem quebras ou bugs visuais
 
-**Menor tela:**
-![Teste de Usabilidade - mobile](imgs/teste_usabilidade_mobile.png)
+**Mobile:**
 
- Interface funciona corretamente, porém sem quebra no título da coluna "Qtd. água (ml)"
+![Teste de Usabilidade - Mobile](imgs/teste_usabilidade_mobile.png)
+
+Interface funciona corretamente, porém sem quebra no título da coluna "Qtd. água (ml)"
  
 ### 2. Confiabilidade
 
@@ -45,7 +49,7 @@ Todos os dados do lançamento são persistidos corretamente, sem perdas.
 
 ### 3. Legalidade
 
-![Teste de Legalidade](imgs/teste_legalidade.jpeg)
+![Teste de Legalidade](imgs/teste_legalidade.png)
 
 Todas as dependências são open-source.
 Nenhuma solução pronta/comercial foi identificada.
@@ -71,14 +75,13 @@ Dados exibidos e armazenados com precisão mínima de 0.1 unidade.
 
 ### 5. Manutenibilidade
 
-Documentação
+**Documentação:**
+
 ![Documentação](imgs/documentacao.jpeg)
 
+**README:**
 
-README
-![Readme](imgs/readme.png)
-
-
+![README](imgs/readme.png)
 
 Código e documentação são claros para todos os membros
 
@@ -86,8 +89,7 @@ Código e documentação são claros para todos os membros
 
 ### 6. Qualidade Técnica
 
-![Historico](imgs/qualidade_tec.jpeg)
-
+![Histórico de Commits](imgs/qualidade_tec.jpeg)
 
 Código segue boas práticas de programação
 
@@ -96,6 +98,7 @@ Código segue boas práticas de programação
 - **Padrões:** Seguindo boas práticas de desenvolvimento
 
 **Repositório:** [https://github.com/PI1-G01-T04-2025-1/documentacao](https://github.com/PI1-G01-T04-2025-1/documentacao)
+
 
 
 ## Histórico de versões
