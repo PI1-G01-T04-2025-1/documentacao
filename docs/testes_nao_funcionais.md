@@ -17,6 +17,7 @@ Foram realizadas comprovações para validar atributos de qualidade do sistema, 
 **Evidências Visuais:**
 
 **macOS:**
+
 ![Teste de Usabilidade - macOS Firefox](imgs/teste_usabilidade_mac.jpeg)
 
  Interface funciona corretamente, sem quebras ou bugs visuais
