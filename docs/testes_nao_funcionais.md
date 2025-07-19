@@ -45,7 +45,7 @@ Todos os dados do lançamento são persistidos corretamente, sem perdas.
 
 ### 3. Legalidade
 
-![Teste de Legalidade](imgs/teste_legalidade.jpeg)
+![Teste de Legalidade](imgs/teste_legalidade.png)
 
 Todas as dependências são open-source.
 Nenhuma solução pronta/comercial foi identificada.
