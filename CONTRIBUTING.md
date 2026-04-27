@@ -80,8 +80,6 @@ git commit
 O Git abrirá automaticamente seu editor configurado com o conteúdo do `.gitmessage`.
 Você só precisa preencher ou ajustar a mensagem conforme o padrão.
 
-Perfeito! Aqui está um **texto explicativo** para adicionar ao `CONTRIBUTING.md` ou ao final da documentação, explicando como manter o **Histórico de Versões**:
-
 <br>
 
 ## 📜 Histórico de Versões
